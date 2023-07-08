@@ -1,0 +1,37 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<h1>Alta cliente</h1>
+<!--  onSubmit() esta en app.component  -->
+<p>Nombre:<input type="text" name="nombre" [(ngModel)]="nombre"></p>
+<p>CIF:<input type="text" name="cif" [(ngModel)]="cif"></p>
+<p>Direccion:<input type="text" name="direccion" [(ngModel)]="direccion"></p>
+<p>Grupo:
+<select [(ngModel)]="grupo">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select>
+</p>
+<button (click)="guardar()">Guardar</button>
+<!-- {{nombre}},{{cif}},{{direccion}},{{grupo}} -->
+<!-- {{clientes[0].nombre}},{{clientes[0].cif}},{{clientes[0].direccion}},{{clientes[0].grupo}} -->
+
+<app-clientes [data]="clientes"></app-clientes>
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
